@@ -1,0 +1,40 @@
+<h1 style="text-align: center">Ag-Grid!</h1>
+<h3 style="text-align: center">Client Side Row Model</h3>
+<br>
+<button (click)="clearSelection()">Clear Selection</button>
+<br>
+<button
+(click)="onBtExport()"
+style="margin-bottom: 5px; font-weight: bold;"
+>
+Export to Excel
+</button>
+<br>
+<ag-grid-angular
+class="ag-theme-alpine"
+style="height: 500px; width: 100%"
+[rowData]="rowData$ | async"
+[columnDefs]="colDefs"
+[defaultColDef]="defaultColDef"
+[rowSelection]="'multiple'"
+[animateRows]="true"
+(cellClicked)="onCellClicked($event)"
+></ag-grid-angular>
+<br>
+<h3 style="text-align: center">Infinite Row Model</h3>
+<ag-grid-angular
+    style="width: 100%; height: 1000px;"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowBuffer]="rowBuffer"
+    [rowSelection]="'multiple'"
+    [rowModelType]="'infinite'"
+    [cacheBlockSize]="cacheBlockSize"
+    [cacheOverflowSize]="cacheOverflowSize"
+    [maxConcurrentDatasourceRequests]="maxConcurrentDatasourceRequests"
+    [infiniteInitialRowCount]="infiniteInitialRowCount"
+    [maxBlocksInCache]="maxBlocksInCache"
+    [rowData]="rowData$ | async"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular> 

@@ -1,0 +1,16 @@
+<!-- <h3 style="text-align: center">This is Dashboard Component</h3>
+<div class="container_das">
+    <h1 style="text-align: center;">Welcome to Vizarchs</h1>
+    <p>We offer aesthetically pleasing and commendable architectural design, interior design, 3D renderings and CAD facilities to residential and commercial clients who want exclusively designed interiors and exteriors. Anyone can benefit from our expert services from Architectural firms to Builders, Interior designers, real estate developers and brokers.</p>
+
+</div> -->
+<div class="child">
+    <h2>Child Component</h2>
+    <p>The user name is: <strong>{{username}}</strong></p>
+    <label for="user-input">Add an user</label>
+    <input type="text" id="user-input" #newUser> 
+    <button (click)="addNewUser(newUser.value); newUser.value=''">Add</button>
+</div>
+<div style="text-align: center">
+    <button mat-button (click)="notification('success', 'OK')">Toastr</button>
+</div>

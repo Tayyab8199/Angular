@@ -1,0 +1,31 @@
+.container_das{
+    height: 0px;
+    background-color: black;
+  }
+  .container_das h1{
+    color: black;
+    font-size: xx-large;
+  }
+  p{
+    color: black;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+  }
+  .child{
+    border: 2px solid gray;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: lavender;
+  }
+  h2{
+    text-align: center;
+    color: blueviolet;
+  }
+  
+  
+  
+  
+  

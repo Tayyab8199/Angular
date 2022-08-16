@@ -1,0 +1,11 @@
+<!-- <h3 style="text-align: center">This is Report Component</h3> -->
+<!-- <div class="container pt-5 pb-5" style="text-align: center">
+    <button (click)="hello()">Hello</button>
+</div>  -->
+<div class="parent">
+    <h2>Parent Component</h2>
+    <ul>
+        <li *ngFor="let user of users">{{user}}</li>
+    </ul>
+    <app-dashboard [username]="currentuser" (newUserEvent)="addUser($event)"></app-dashboard>
+</div>

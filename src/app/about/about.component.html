@@ -1,0 +1,20 @@
+<div class="data">
+  <h3 style="text-align: center; color: black;">This is About Component</h3>
+  <ul>
+    <li *ngFor="let user of users">
+      {{user.email}}
+    </li>
+  </ul>
+  <!-- <button mat-button (click)="getResp()">Get API Data</button> -->
+  <h3 style="padding-left: 130px">API Data</h3>
+  <ul>
+    <li *ngFor="let item of usrlist">
+      {{item.id}} - {{item.name}} - {{item.email}} - {{item.password}}
+    </li>
+  </ul>
+  <button mat-button (click)="postResp()">Post API Data</button>
+  <br>
+  <!-- <input #id class="form-control">
+  <button mat-button (click)="getDataById(id.value)">Get Data</button><br>
+  <span>{{usrid.id}} - {{usrid.name}} - {{usrid.email}} - {{usrid.password}}</span> -->
+</div>
